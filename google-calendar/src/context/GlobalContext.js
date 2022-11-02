@@ -12,6 +12,9 @@ const GlobalContext = React.createContext({
   // Day selected on small calendar
   daySelected: null,
   setDaySelected: (day) => {},
+
+  showEventModal: false,
+  setShowEventModal: () => {},
 });
 
 export default GlobalContext;
