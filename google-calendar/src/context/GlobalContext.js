@@ -13,8 +13,27 @@ const GlobalContext = React.createContext({
   daySelected: null,
   setDaySelected: (day) => {},
 
+  // Hide and show create event window
   showEventModal: false,
   setShowEventModal: () => {},
+
+  // Crud operations on events
+  dispatchCalEvent: ({ type, payload }) => {},
+  savedEvents: [],
+
+  // Read already created events
+  selectedEvent: null,
+  setSelectedEvent: () => {},
+
+  // Set colour tags to events
+  labels: [],
+  setLabels: () => {},
+
+  // Change colour tags
+  updateLabel: () => {},
+
+  // Filter events according to label
+  filteredEvents: [],
 });
 
 export default GlobalContext;
